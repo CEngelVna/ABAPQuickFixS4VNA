@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            id="abap_quickfix_s4_vna_plugin.preferences.abapQuickFixS4VnaPreferences"
+            name="ABAP QuickFix S4 VNA"
+            class="abap_quickfix_s4_vna_plugin.preferences.abapQuickFixS4VnaPreferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="abap_quickfix_s4_vna_plugin.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="com.abapblog.additional_quickfixes">
+		 <client
+                 class="abap_quickfix_s4_vna_plugin.FixAppender">
+           </client>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+   </extension>
+   <extension
+         point="com.sap.adt.tools.core.ui.quickAssistProcessors">
+   </extension>
+
+</plugin>

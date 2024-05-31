@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ABAP_QuickFix_S4_VNA_Feature_1.0.0.202405311816.jar" id="ABAP_QuickFix_S4_VNA_Feature" version="1.0.0.202405311816"/>
+</site>
