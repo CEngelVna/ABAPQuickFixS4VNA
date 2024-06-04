@@ -2,7 +2,7 @@
 <feature
       id="ABAP_QuickFix_S4_VNA_Feature"
       label="ABAP QuickFix S4 VNA"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="CEngel VNA">
 
    <description url="https://abapblog.com">
@@ -62,6 +62,10 @@ You may add Your own copyright statement to Your modifications and may provide a
 
 END OF TERMS AND CONDITIONS
    </license>
+
+   <requires>
+      <import feature="com.abapblog.adt.quickfix.feature" version="1.1.5.qualifier"/>
+   </requires>
 
    <plugin
          id="ABAP_QuickFix_S4_VNA_Plugin"

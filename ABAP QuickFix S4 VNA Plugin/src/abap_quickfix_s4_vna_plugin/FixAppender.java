@@ -8,6 +8,7 @@ import com.abapblog.adt.quickfix.IFixAppender;
 import com.abapblog.adt.quickfix.assist.syntax.statements.StatementAssist;
 
 import ddic.DDICChange;
+import ddic.TYLINE;
 
 public class FixAppender implements IFixAppender {
 
@@ -16,6 +17,7 @@ public class FixAppender implements IFixAppender {
         ArrayList<StatementAssist> list = new ArrayList<StatementAssist>();
         
         list.add(new DDICChange());
+        list.add(new TYLINE());
         
         return list;
     }

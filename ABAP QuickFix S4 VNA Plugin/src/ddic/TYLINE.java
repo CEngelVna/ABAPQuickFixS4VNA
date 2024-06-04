@@ -12,15 +12,15 @@ import com.abapblog.adt.quickfix.assist.syntax.statements.move.MoveExact;
 
 import abap_quickfix_s4_vna_plugin.Activator;
 
-public class DDICChange extends StatementAssistRegex implements IAssistRegex {
+public class TYLINE extends StatementAssistRegex implements IAssistRegex {
 
     private static final String selectPattern =
-            "(char)+0(\\\\d+)";
+            "(TY_TLINE)";
 
-    private static final String replaceByPattern = "$1$2";
+    private static final String replaceByPattern = "/VTIS/BC_TLINE_T";
 
 
-    public DDICChange() {
+    public TYLINE() {
         super();
 
         IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.eclipse.ui.editors");
@@ -42,12 +42,12 @@ return temp3.replaceFirst(getMatchPattern(), getReplacePattern());
 
     @Override
     public String getAssistShortText() {
-        return "Change DDIC CHAR0* to CHAR*";
+        return "Change Type TY_TLINE to /VTIS/BC_TLINE_T";
     }
 
     @Override
     public String getAssistLongText() {
-        return "Changes Obsolete Type CHAR DDIC Objects to existing ones. Exp. CHAR02 to CHAR2.";
+        return "Changes Obsolete Type TY_TLINE to /VTIS/BC_TLINE_T";
     }
 
     private static Image icon;
@@ -57,7 +57,8 @@ return temp3.replaceFirst(getMatchPattern(), getReplacePattern());
 
     @Override
     public boolean canAssist() {
-        if (CodeReader.CurrentStatement.matchPatternSingleLine(getMatchPattern()) && !(new MoveExact().canAssist())) {
+    	String temp1 = CodeReader.CurrentStatement.getStatement();
+        if (CodeReader.CurrentStatement.matchPatternSingleLine(getMatchPattern())) {
 
             // get current indentation for statement, prefix with line break
             String temp = CodeReader.CurrentStatement.replacePattern(getMatchPattern(), "$1");

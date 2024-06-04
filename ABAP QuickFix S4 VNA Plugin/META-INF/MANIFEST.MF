@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ABAP QuickFix S4 VNA Plugin
 Bundle-SymbolicName: ABAP_QuickFix_S4_VNA_Plugin;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Export-Package: abap_quickfix_s4_vna_plugin,
  ddic
 Import-Package: com.sap.adt.atc.model.autoquickfix,
