@@ -7,6 +7,7 @@ import org.eclipse.jface.text.quickassist.IQuickAssistInvocationContext;
 import com.abapblog.adt.quickfix.IFixAppender;
 import com.abapblog.adt.quickfix.assist.syntax.statements.StatementAssist;
 
+import ddic.BSAD_BISD_View;
 import ddic.DDICChange;
 import ddic.TYLINE;
 
@@ -18,6 +19,7 @@ public class FixAppender implements IFixAppender {
         
         list.add(new DDICChange());
         list.add(new TYLINE());
+        list.add(new BSAD_BISD_View());
         
         return list;
     }

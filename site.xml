@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/ABAP_QuickFix_S4_VNA_Feature_1.0.1.202406041232.jar" id="ABAP_QuickFix_S4_VNA_Feature" version="1.0.1.202406041232"/>
+   <description name="ABAP QuickFix S4 VNA" url="https://cengelvna.github.io/ABAPQuickFixS4VNA/">
+      Abap QuickFixes for S4 Conversion. Change Obsolete DDIC Types
+   </description>
+   <feature url="features/ABAP_QuickFix_S4_VNA_Feature_1.0.2.qualifier.jar" id="ABAP_QuickFix_S4_VNA_Feature" version="1.0.2.qualifier"/>
 </site>

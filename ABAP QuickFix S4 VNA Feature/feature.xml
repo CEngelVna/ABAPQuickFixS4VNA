@@ -2,10 +2,10 @@
 <feature
       id="ABAP_QuickFix_S4_VNA_Feature"
       label="ABAP QuickFix S4 VNA"
-      version="1.0.1.qualifier"
+      version="1.0.2.qualifier"
       provider-name="CEngel VNA">
 
-   <description url="https://abapblog.com">
+   <description url="https://cengelvna.github.io/ABAPQuickFixS4VNA/">
       Additional Quick Fixes for S4 Conversion Projects Obsolete Objects.
    </description>
 
@@ -69,9 +69,6 @@ END OF TERMS AND CONDITIONS
 
    <plugin
          id="ABAP_QuickFix_S4_VNA_Plugin"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         version="0.0.0"/>
 
 </feature>
